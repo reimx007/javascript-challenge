@@ -17,10 +17,11 @@ button.on("click", function() {
   // Get the value property of the input element
   var inputValue = input.property("value");
   console.log(inputValue);
-  // Use the form input to filter the data by blood type
+  // Use the form input to filter the data by date
   var filtered = tableData.filter(sighting => sighting.datetime === inputValue);
   console.log(filtered);
 
+  // write filtered object to the table body of html page
   filtered.forEach((ufoSighting) => {
     var row = tbody.append("tr");
     Object.entries(ufoSighting).forEach(([key, value]) => {
