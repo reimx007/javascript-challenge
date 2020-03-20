@@ -6,8 +6,13 @@
 html,
 body {
   height: 100%;
+  background-color: #a49e99;
   padding: 0;
   margin: 0;
+}
+
+.table_bkground {
+  background-color: #928884
 }
 
 /* The wrapper contains all of the page's content besides the footer, which is pushed to the bottom of the page */
@@ -47,9 +52,13 @@ body {
 .nav-ufo {
   position: absolute;
   bottom: 5px;
+  top: 5px;
   left: 150px;
   width: 35px;
   color: white;
+}
+.navbar-default {
+  color: #113c66;
 }
 
 /* Adding styles to the aside and filter form */
@@ -77,10 +86,19 @@ select {
   text-align: center;
 }
 
+#bootstrap-overrides nav {
+  color: #113c66;
+}
+
 #table-area th:first-child,
 #table-area th:nth-child(2),
 #table-area th:nth-child(6) {
   min-width: 70px;
+}
+
+#ufo-head {
+  background-color: #485563;
+  /* color: gray; */
 }
 
 .loader {
@@ -98,7 +116,7 @@ select {
   padding: 20px;
   margin: 0;
   background: black;
-  background-image: url("../images/nasa.jpg");
+  background-image: url("../images/ufo_bkground.jpg");
   background-attachment: fixed;
   background-position: bottom center;
   background-size: cover;
@@ -106,12 +124,16 @@ select {
 
 .hero h1 {
   margin-top: 200px;
+  /* background-color: white;
+  opacity: .9; */
+  color: lightgray;
   font-size: 0.1rem;
   animation: title 1.2s forwards linear;
 }
 
 .hero p {
   font-size: 2rem;
+  color: lightgray;
   opacity: 0;
   animation: subtitle 1.2s forwards linear;
   animation-delay: 1.2s;
@@ -147,6 +169,7 @@ select {
 
 @media (max-width: 500px) {
   #table-area thead {
+    color: lightgray;
     display: none;
   }
 
